@@ -150,7 +150,22 @@ export default function Home() {
 
       <section id="home" className="hero section">
         <div className="hero-content">
-          <p className="eyebrow">AI • SOFTWARE • DATA</p>
+          <div className="hero-profile">
+            <div className="profile-image-wrapper">
+              <img
+                src="/profile-picture.jpg"
+                alt="Solomon Sunday Ele-ojo"
+                className="profile-image"
+              />
+            </div>
+
+            <div>
+              <p className="eyebrow">AI • SOFTWARE • DATA</p>
+              <p className="profile-label">
+                Solomon Sunday Ele-ojo
+              </p>
+            </div>
+          </div>
 
           <h1>
             AI-Powered Software
@@ -194,7 +209,9 @@ export default function Home() {
               LinkedIn ↗
             </a>
 
-            <a href="mailto:sundaysolomoneleojo@gmail.com">Email ↗</a>
+            <a href="mailto:sundaysolomoneleojo@gmail.com">
+              Email ↗
+            </a>
           </div>
         </div>
 
@@ -306,7 +323,9 @@ export default function Home() {
                 <span className="project-number">
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <span className="project-category">{project.category}</span>
+                <span className="project-category">
+                  {project.category}
+                </span>
               </div>
 
               <h3>{project.title}</h3>
